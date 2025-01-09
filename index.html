@@ -35,27 +35,21 @@
         .contact-info p {
             margin: 5px 0;
         }
-        form {
-            display: flex;
-            flex-direction: column;
+        .whatsapp-button {
+            text-align: center;
+            margin-top: 20px;
         }
-        form label {
-            margin: 10px 0 5px;
-        }
-        form input, form textarea, form button {
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        form button {
-            background-color: #333;
+        .whatsapp-button a {
+            display: inline-block;
+            padding: 10px 20px;
             color: #fff;
-            border: none;
-            cursor: pointer;
+            background-color: #25d366;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
         }
-        form button:hover {
-            background-color: #555;
+        .whatsapp-button a:hover {
+            background-color: #1da851;
         }
     </style>
 </head>
@@ -63,6 +57,7 @@
     <header>
         <h1>Comercializadora Mazchile SPA</h1>
         <p>Venta de repuestos automotrices</p>
+        <p>Stock y a pedido</p>
     </header>
     <div class="container">
         <section class="contact-info">
@@ -71,23 +66,12 @@
             <p><strong>Teléfonos:</strong></p>
             <p>+569 855 37 256</p>
             <p>+569 323 41 093</p>
+            <p><strong>Correo:</strong> <a href="mailto:mazchile763@gmail.com">mazchile763@gmail.com</a></p>
         </section>
 
-        <section class="quotation-form">
-            <h2>Formulario de Cotización</h2>
-            <form action="mailto:mazchile763@gmail.com" method="post" enctype="text/plain">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido" name="apellido" required>
-
-                <label for="detalle">Detalle del Pedido a Cotizar:</label>
-                <textarea id="detalle" name="detalle" rows="4" required></textarea>
-
-                <button type="submit">Enviar Cotización</button>
-            </form>
-        </section>
+        <div class="whatsapp-button">
+            <a href="https://wa.me/56932341093" target="_blank">Chatea con nosotros en WhatsApp</a>
+        </div>
     </div>
 </body>
 </html>
