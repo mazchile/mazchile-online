@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comercializadora Mazchile SPA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .contact-info {
+            margin-bottom: 20px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form label {
+            margin: 10px 0 5px;
+        }
+        form input, form textarea, form button {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Comercializadora Mazchile SPA</h1>
+        <p>Venta de repuestos automotrices</p>
+    </header>
+    <div class="container">
+        <section class="contact-info">
+            <h2>Información de Contacto</h2>
+            <p><strong>Dirección:</strong> Emiliano Figueroa 763, Santiago</p>
+            <p><strong>Teléfonos:</strong></p>
+            <p>+569 855 37 256</p>
+            <p>+569 323 41 093</p>
+        </section>
+
+        <section class="quotation-form">
+            <h2>Formulario de Cotización</h2>
+            <form action="mailto:mazchile763@gmail.com" method="post" enctype="text/plain">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="detalle">Detalle del Pedido a Cotizar:</label>
+                <textarea id="detalle" name="detalle" rows="4" required></textarea>
+
+                <button type="submit">Enviar Cotización</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
